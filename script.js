@@ -30,3 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
   startListeningButton.addEventListener('click', startListening);
   stopListeningButton.addEventListener('click', stopListening);
 });
+
+const toggleDarkMode = () => {
+  document.body.classList.toggle('dark-mode');
+};
+
+
+particlesJS('particles-js', {
+  particles: {
+    // Particle options
+  },
+});
+
