@@ -1,5 +1,9 @@
 // scripts.js
-// You can add any JavaScript functionality here if needed
 document.addEventListener('DOMContentLoaded', () => {
-  // Add your scripts here if necessary
+  const personalButton = document.getElementById('personal-button');
+
+  personalButton.addEventListener('click', () => {
+    // Redirect to the "personal" page
+    window.location.href = 'personal.html';
+  });
 });
