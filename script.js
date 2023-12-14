@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
   stopListeningButton.addEventListener('click', stopListening);
 });
 
-const toggleDarkMode = () => {
-  document.body.classList.toggle('dark-mode');
-};
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
 
+  const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+  };
 
-particlesJS('particles-js', {
-  particles: {
-    // Particle options
-  },
+  darkModeToggle.addEventListener('click', toggleDarkMode);
 });
+
 
