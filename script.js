@@ -1,44 +1,5 @@
+// scripts.js
+// You can add any JavaScript functionality here if needed
 document.addEventListener('DOMContentLoaded', () => {
-  // 3D Box
-  const canvasContainer = document.getElementById('canvas-container');
-  const box = document.createElement('div');
-  box.classList.add('box');
-  canvasContainer.appendChild(box);
-
-  // Speech Recognition
-  const startListeningButton = document.getElementById('start-listening');
-  const stopListeningButton = document.getElementById('stop-listening');
-  const speechText = document.getElementById('speech-text');
-
-  let recognition;
-
-  const startListening = () => {
-    recognition = new webkitSpeechRecognition();
-    recognition.onresult = (event) => {
-      const result = event.results[0][0].transcript;
-      speechText.innerText = result;
-    };
-    recognition.start();
-  };
-
-  const stopListening = () => {
-    if (recognition) {
-      recognition.stop();
-    }
-  };
-
-  startListeningButton.addEventListener('click', startListening);
-  stopListeningButton.addEventListener('click', stopListening);
+  // Add your scripts here if necessary
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const darkModeToggle = document.getElementById('dark-mode-toggle');
-
-  const toggleDarkMode = () => {
-    document.body.classList.toggle('dark-mode');
-  };
-
-  darkModeToggle.addEventListener('click', toggleDarkMode);
-});
-
-
