@@ -5,11 +5,26 @@ body {
   padding: 0;
 }
 
+/* Add this style for the transition effect */
+body.personal-page {
+  transform: rotateY(180deg);
+  transition: transform 1s ease-in-out;
+}
+
 header {
   background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+/* Add styles for the "Personal" button */
+#personal-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 nav ul {
