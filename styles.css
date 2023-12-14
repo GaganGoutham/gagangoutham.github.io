@@ -1,3 +1,4 @@
+/* styles.css */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -11,58 +12,25 @@ header {
   text-align: center;
 }
 
-#canvas-container {
-  width: 100%;
-  height: 300px;
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-#speech-recognition {
-  text-align: center;
-  margin: 20px;
+nav li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-button {
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
+nav a {
+  text-decoration: none;
+  color: white;
 }
 
-button:hover {
-  background-color: #ddd;
+main {
+  padding: 20px;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: lightblue;
-  margin: auto;
-  transform-origin: center center;
-  animation: rotate 5s linear infinite;
+section {
+  margin-bottom: 40px;
 }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-:root {
-  --background-color-light: #fff;
-  --text-color-light: #333;
-  --background-color-dark: #333;
-  --text-color-dark: #fff;
-}
-
-body {
-  background-color: var(--background-color-light);
-  color: var(--text-color-light);
-}
-
-body.dark-mode {
-  background-color: var(--background-color-dark);
-  color: var(--text-color-dark);
-}
-
