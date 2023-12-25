@@ -1,9 +1,11 @@
-// scripts.js
-document.addEventListener('DOMContentLoaded', () => {
-  const personalButton = document.getElementById('personal-button');
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.content');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
 
-  personalButton.addEventListener('click', () => {
-    // Redirect to the "personal" page
-    window.location.href = 'personal.html';
-  });
-});
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.style.display = 'block';
+}
