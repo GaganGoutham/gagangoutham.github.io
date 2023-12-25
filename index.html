@@ -74,10 +74,6 @@
 
       <!-- Entries Column -->
       <div class="col-md-8">
-
-        <!-- Main Image -->
-        <img class="img-responsive" src="profile-photo.jpg" alt=""><br>
-
         <div style="margin-top: 3%; text-align: justify;">
           <p>Hi There!</p>
         </div>
@@ -99,13 +95,17 @@
       <!-- Sidebar -->
       <div class="col-md-4">
         <!-- Contact Info -->
-        <div class="contact-info">
-          <div style="font-size: 32px;"><b>Gagan Goutham</b></div><br>
-          <p><b>ARTPARK, IISc</b><br>
-            PES University<br>
-            Bengaluru<br>
-            India<br>
-          </p>
+        <div class="contact-info text-center">
+          <img class="img-responsive circular-image" src="profile-photo.jpg" alt="">
+          <br>
+          <div class="text-left"> <!-- Add a class for left alignment -->
+            <div style="font-size: 32px;"><b>Gagan Goutham</b></div>
+            <p><b>ARTPARK, IISc</b><br>
+              PES University<br>
+              Bengaluru<br>
+              India<br>
+            </p>
+          </div>
         </div>
 
         <!-- Sidebar Links -->
@@ -116,6 +116,22 @@
           <dd><a href="https://www.linkedin.com/in/gagan-goutham-242a641b1/">LinkedIn</a></dd>
         </div>
       </div>
+
+      <style>
+        /* Add this style in your head or external stylesheet */
+        .circular-image {
+          max-width: 50%;
+          height: auto;
+          border-radius: 50%;
+        }
+
+        .text-left {
+          text-align: left;
+        }
+      </style>
+
+
+
 
       <!-- Add more sections as needed (CV, Experience, Blog) -->
 
