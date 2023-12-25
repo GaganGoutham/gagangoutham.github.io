@@ -10,7 +10,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <style>
-    /* Your styles here */
+    body {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .circular-image {
+      max-width: 50%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .text-left {
+      text-align: left;
+    }
   </style>
 </head>
 
@@ -18,7 +39,28 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <!-- Your navigation content here -->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#talks">Talks</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#cv">CV</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <!-- Page Content -->
@@ -27,30 +69,153 @@
 
       <!-- Entries Column -->
       <div class="col-md-8">
+
         Hi There!
-        <!-- Content of the main page -->
 
-        <!-- Add links or buttons to navigate to other sections -->
-        <a href="education.html">Education</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="publications.html">Publications</a>
-        <a href="talks.html">Talks</a>
-        <a href="blog.html">Blog</a>
-        <a href="cv.html">CV</a>
+    For the longest time, it has been known that Earth is the only sustainable human-living planet across the universe. Spacecraft have not discovered the existence of life outside of our solar system. Given Mars’ proximity and similarities to Earth, the possibility of life there is a subject of interest. Scientists have been striving to learn more about Mars for decades. At this time, it is physically impossible for humans to spend an extended period of time on Mars to study its habitat. This requires relying on extraterrestrial machinery to serve as our eyes. It involves giving machines the best training available so that they can learn how to navigate the terrain. These machines capture and send forth data which is processed to morph into mapping the sphere, forecasting paths, analyzing the landscape and even improving the same spacecraft’s capabilities on learning more about the planet it is on.The rovers’ in-situ landscape images are the main subject of this study. In this research, a novel approach has been presented for multi-label semantic segmentation of the martian terrain for navigation using variants of a transformer model - SegFormer, which has resulted in a commendable accuracy of 90.86% and mIoU of 83.55% on the AI4Mars dataset.
+
+        <!-- Education Section -->
+        <div class="section" id="education">
+          <h2>Education</h2>
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="education-list">
+                <li>
+                  <b>B.Tech in Computer Science and Engineering - PES University, Bengaluru</b>
+                </li>
+                <li>
+                  <b>Grade 12 - Deeksha Center for Learning, Bengaluru</b>
+                </li>
+                <li>
+                  <b>Grade 10 - National Public School, Kengeri, Bengaluru</b>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="education-list text-right">
+                  <ul>2024 (Expected)</ul>                                
+                  <ul>Mar 2020</ul>                                
+                  <ul>Mar 2018</ul>                
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        <!-- Experiences Section -->
+        <div class="section" id="experiences">
+          <h2>Experiences</h2>
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="experiences-list">
+                <li><b>Junior Research Fellow, ARTPARK, IISc</b></li>
+                <li><b>Research Intern, AI Institute, University of South Carolina</b></li>
+                <li><b>Data Analysis & Engineering Intern, ARTPARK, IISc</b></li>
+                <li><b>Summer Research Intern, IEEE CS Bangalore Chapter</b></li>
+                <li><b>Research Assistant, PES University</b></li>                
+                <!-- Add more experiences as needed -->
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="experiences-list text-right">
+                <ul>Sep 2023 - Present</ul>
+                <ul>Sep 2023 - Present</ul>
+                <ul>June 2023 - Aug 2023</ul>
+                <ul>June 2022 - July 2022</ul>
+                <ul>Jan 2022 - Dec 2023</ul>                
+                <!-- Add more date entries as needed -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Publications Section -->
+        <div class="section" id="publications">
+          <h2>Publications</h2>
+          <ul>
+            <li><a>Advancements in AI for Mental Health: Exploring ASD, ADHD & Schizophrenia, Video Datasets, and Future Directions</a> <br>
+              Authors: Charvi Bannur, Chaitra Bhat, Gagan Goutham, Sada Kakarla, Mamatha HR <br> 
+              Under Review - Taylor and Francis Book Series, 2023 <br>
+            </li>
+            <li><a>Leveraging VQA to analyze Autism Spectrum Disorder (ASD)</a> <br>
+                Authors: Charvi Bannur, Chaitra Bhat, Gagan Goutham, Sada Kakarla, Mamatha HR, Shankar Kumar, Abhishek <br> 
+                Under Review - BMC Bioinformatics, 2024 <br>
+            <li><a href="https://ieeexplore.ieee.org/document/10090902">Traffic Congestion Prediction Based on Spatio-Temporal Graph Structure Learning</a> <br>
+                Authors: Charvi Bannur, Chaitra Bhat, Gagan Goutham, Mamatha HR <br> 
+                Published in: 2023 International Conference on Intelligent and Innovative Technologies in Computing, Electrical and Electronics (IITCEE) <br>
+                Venue: BNM Institute of Technology, Bengaluru</li>
+            <li><a href="https://ieeexplore.ieee.org/document/10037408">General Transit Feed Specification Assisted Effective Traffic Congestion Prediction Using Decision Trees and Recurrent Neural Networks</a> <br>
+                Authors: Charvi Bannur, Chaitra Bhat, Gagan Goutham, Mamatha HR <br> 
+                Published in: 2022 IEEE 1st International Conference on Data, Decision and Systems (ICDDS) <br>
+                Venue: BMS College of Engineering, Bengaluru</li>
+            <li><a href="https://ieeexplore.ieee.org/document/10054341">Semantic Segmentation on Martian Terrain for Navigation using Transformers</a> <br>
+                Authors: Gagan Goutham, Hita Juneja, Ankita C, Badri Prasad VR <br> 
+                Published in: 2022 IEEE 7th International Conference on Recent Advances and Innovations in Engineering (ICRAIE) <br>
+                Venue: National Institue of Technology, Surathkal</li>
+            <!-- Add more publications as needed -->
+          </ul>
+        </div>
+
+        <!-- Talks Section -->
+        <div class="section" id="talks">
+          <h2>Talks</h2>
+          <ul>
+            <li><a href="#">Talk Title 1</a> - Speaker</li>
+            <li><a href="#">Talk Title 2</a> - Speaker</li>
+            <!-- Add more talks as needed -->
+          </ul>
+        </div>        
+
+        <!-- Blog Section -->
+        <div class="section" id="blog">
+          <h2>Blog</h2>
+          <ul>
+            <li><a href="#">Blog Post Title 1</a> - Date</li>
+            <li><a href="#">Blog Post Title 2</a> - Date</li>
+            <!-- Add more blog posts as needed -->
+          </ul>
+        </div>
+
+        <!-- CV Section -->
+        <div class="section" id="cv">
+          <h2>CV</h2>
+          <p><a href="#">Download CV</a></p>
+        </div>
 
       </div>
 
-      <!-- Sidebar -->
       <div class="col-md-4">
-        <!-- Sidebar content here -->
-      </div>
+
+        <!-- Main Image -->
+        <img class="img-responsive circular-image" src="profile-photo.jpg" alt="">
+        <br>      
+        <div class="text-left">
+          <div style="font-size: 32px;"><b>Gagan Goutham</b></div>
+          <p><b>Junior Research Fellow, ARTPARK, IISc</b><br>
+            CSE Senior, PES University<br>
+            Bengaluru<br>
+            India<br>
+          </p>
+
+          <!-- Sidebar Links -->
+          <div class="sidebar-links">
+            <h2>Links</h2>
+            <dd><a href="https://scholar.google.com/citations?user=RQwvJBIAAAAJ&hl=en">Google Scholar</a></dd>
+            <dd><a href="https://github.com/GaganGoutham">Github</a></dd>
+            <dd><a href="https://www.linkedin.com/in/gagan-goutham-242a641b1/">LinkedIn</a></dd>
+          </div>
+        </div>
 
     </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    <!-- Your footer content here -->
+    <p style="color: #b5bec9; font-size: 0.8em; float: right; margin-right: 20px;">
+      <a href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+    </p>
   </footer>
 
 </body>
