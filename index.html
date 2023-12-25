@@ -1,11 +1,6 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
+
 <head>
   <title>Gagan Goutham</title>
   <meta charset="utf-8">
@@ -14,84 +9,126 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .contact-info {
+      font-size: 18px;
+    }
+
+    .sidebar-links dd {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
+
 <body>
 
-
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#">Projects</a></li>
-				  <li><a href="#publications">Publications</a></li> 
-				  <li><a href="#">CV</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
     <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-        <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-                <img class="img-responsive" src="photo.gif" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-					          <p>Hi There!</p>																			
-                </div>
-            </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>John Doe</b></div><br>
-                <p><b>Gagan Goutham</b><br>
-                <p>ARTPARK, IISc<br>
-                PES University<br>
-                Bengaluru<br>                
-                India<br>
-                </p>
-            </div>
-                        
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="#https://scholar.google.com/citations?user=RQwvJBIAAAAJ&hl=en">Google Scholar</a></dd> 
-              <dd><a href="#https://github.com/GaganGoutham">Github</a></dd>
-              <dd><a href="#https://www.linkedin.com/in/gagan-goutham-242a641b1/">LinkedIn</a></dd>
-            </div>
-                        
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="publications">Publications</h2>                
-                <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>            
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul>
-            </div>
-        </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#talks">Talks</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
     </div>
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-    
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Entries Column -->
+      <div class="col-md-8">
+
+        <!-- Main Image -->
+        <img class="img-responsive" src="profile-photo.jpg" alt=""><br>
+
+        <div style="margin-top: 3%; text-align: justify;">
+          <p>Hi There!</p>
+        </div>
+
+        <!-- Publications Section -->
+        <div class="section" id="publications">
+          <h2>Publications</h2>
+          <!-- Add your publication content here -->
+        </div>
+
+        <!-- Talks Section -->
+        <div class="section" id="talks">
+          <h2>Talks</h2>
+          <!-- Add your talks content here -->
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-4">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div style="font-size: 32px;"><b>Gagan Goutham</b></div><br>
+          <p><b>ARTPARK, IISc</b><br>
+            PES University<br>
+            Bengaluru<br>
+            India<br>
+          </p>
+        </div>
+
+        <!-- Sidebar Links -->
+        <div class="sidebar-links">
+          <h2>Links</h2>
+          <dd><a href="https://scholar.google.com/citations?user=RQwvJBIAAAAJ&hl=en">Google Scholar</a></dd>
+          <dd><a href="https://github.com/GaganGoutham">Github</a></dd>
+          <dd><a href="https://www.linkedin.com/in/gagan-goutham-242a641b1/">LinkedIn</a></dd>
+        </div>
+      </div>
+
+      <!-- Add more sections as needed (CV, Experience, Blog) -->
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p style="color: #b5bec9; font-size: 0.8em; float: right; margin-right: 20px;">
+      <a href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+    </p>
+  </footer>
+
 </body>
 
 </html>
