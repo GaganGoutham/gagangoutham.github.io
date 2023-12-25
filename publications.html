@@ -2,58 +2,150 @@
 <html lang="en">
 
 <head>
-  <title>Gagan Goutham - Publications</title>
-  <!-- Include necessary head content here -->
-</head>
+    <title>Gagan Goutham</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        color: #ffffff; /* Set text color to white */
+      }
 
-<body>
+        .owl-carousel {
+        width: 50%; /* Adjust the width as needed */
+        height: 100vh; /* Full viewport height */
+        overflow: hidden;
+        position: fixed;
+        right: 0;
+        }
 
-  <!-- Navigation -->
-  <!-- Include navigation content here -->
+        .owl-carousel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
 
-  <!-- Page Content -->
-  <div class="container">
+      .text-container, .sidebar-container {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.9); /* Transparent black background */
+      }
+
+      h2 {
+        color: #ffffff;
+        margin-top: 20px;
+      }
+
+      .section {
+        margin-top: 40px;
+      }
+
+      .circular-image {
+        max-width: 50%;
+        height: auto;      
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      .text-left {
+        text-align: center;
+      }
+
+      .sidebar-links dd {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  
+  <body>
+  
+    <!-- Navigation -->
+    <!-- Include navigation content here -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+    
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="experience.html">Work Experience</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="updates.html">Updates</a></li>        
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="https://drive.google.com/file/d/1C__EfS9o2b08EQJ-d50ImTnJMtSZrMz-/view?usp=sharing">CV</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>       
+
+  <!-- Page Content -->  
     <div class="row">
+        <div class="owl-carousel">
+            <div><img src="img\p1.jpg" alt="Image 1"></div>
+            <div><img src="img\p2.jpg" alt="Image 2"></div>
+            <div><img src="img\p3.jpg" alt="Image 3"></div>
+            <!-- Add more images as needed -->
+        </div>
 
-      <!-- Entries Column -->
-      <div class="col-md-8">
-        <!-- Content of the publications page -->
-
-        <div class="section" id="publications">
+        <div class="col-md-6 text-container" id="publications">
           <h2>Publications</h2>
           <ul>
             <li><a>Advancements in AI for Mental Health: Exploring ASD, ADHD & Schizophrenia, Video Datasets, and Future Directions</a> <br>
               Authors: Charvi Bannur, Chaitra Bhat, Gagan Goutham, Sada Kakarla, Mamatha HR <br>
               Under Review - Taylor and Francis Book Series, 2023 <br>
             </li>
+            <br>
             <li><a>Leveraging VQA to analyze Autism Spectrum Disorder (ASD)</a> <br>
               Authors: Charvi Bannur, Chaitra Bhat, Gagan Goutham, Sada Kakarla, Mamatha HR, Shankar Kumar, Abhishek <br>
-              Under Review - BMC Bioinformatics, 2024 <br>
+              Under Review - BMC Bioinformatics, 2024 </li>
+            <br>
             <li><a href="https://ieeexplore.ieee.org/document/10090902">Traffic Congestion Prediction Based on Spatio-Temporal Graph Structure Learning</a> <br>
               Authors: Charvi Bannur, Chaitra Bhat, Gagan Goutham, Mamatha HR <br>
               Published in: 2023 International Conference on Intelligent and Innovative Technologies in Computing, Electrical and Electronics (IITCEE) <br>
               Venue: BNM Institute of Technology, Bengaluru</li>
+            <br>
             <li><a href="https://ieeexplore.ieee.org/document/10037408">General Transit Feed Specification Assisted Effective Traffic Congestion Prediction Using Decision Trees and Recurrent Neural Networks</a> <br>
               Authors: Charvi Bannur, Chaitra Bhat, Gagan Goutham, Mamatha HR <br>
               Published in: 2022 IEEE 1st International Conference on Data, Decision and Systems (ICDDS) <br>
               Venue: BMS College of Engineering, Bengaluru</li>
+            <br>
             <li><a href="https://ieeexplore.ieee.org/document/10054341">Semantic Segmentation on Martian Terrain for Navigation using Transformers</a> <br>
               Authors: Gagan Goutham, Hita Juneja, Ankita C, Badri Prasad VR <br>
               Published in: 2022 IEEE 7th International Conference on Recent Advances and Innovations in Engineering (ICRAIE) <br>
               Venue: National Institute of Technology, Surathkal</li>
+            <br>
             <!-- Add more publications as needed -->
           </ul>
-        </div>
+        </div>      
 
-      </div>
+    </div>  
 
-      <!-- Sidebar -->
-      <div class="col-md-4">
-        <!-- Sidebar content here -->
-      </div>
-
-    </div>
-  </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <!-- Owl Carousel JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 3000, // Set the interval for the transition
+                    autoplayHoverPause: true // Pause on hover
+                });
+            });
+    </script>
 
   <!-- Footer -->
   <!-- Include footer content here -->
