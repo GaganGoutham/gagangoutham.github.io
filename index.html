@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Your Name - Personal/Academic Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Personal Academic Website</title>
 </head>
 <body>
-  <header>
-    <h1>Gagan Goutham</h1>
-    <button id="personal-button">Personal</button>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#cv">CV/Resume</a></li>
-        <li><a href="#contact">Contact me</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <h2>Welcome to My Website</h2>
-      <p>Coming Soon!</p>
-    </section>
+    <header>
+        <h1>Your Name</h1>
+    </header>
     
-  </main>
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('publications')">Publications</button>
+        <button onclick="showSection('resume')">Resume</button>
+        <button onclick="showSection('news')">News</button>
+        <button onclick="showSection('contact')">Contact Me</button>
+    </nav>
 
-  <script src="scripts.js"></script>
+    <div id="home" class="content">
+        <h2>Welcome to My Personal Academic Website!</h2>
+        <!-- Home content goes here -->
+    </div>
+
+    <div id="about" class="content">
+        <h2>About Me</h2>
+        <!-- About Me content goes here -->
+    </div>
+
+    <div id="publications" class="content">
+        <h2>Publications</h2>
+        <!-- Publications content goes here -->
+    </div>
+
+    <div id="resume" class="content">
+        <h2>Resume</h2>
+        <!-- Resume content goes here -->
+    </div>
+
+    <div id="news" class="content">
+        <h2>News</h2>
+        <!-- News content goes here -->
+    </div>
+
+    <div id="contact" class="content">
+        <h2>Contact Me</h2>
+        <!-- Contact Me content goes here -->
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
