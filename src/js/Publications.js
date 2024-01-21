@@ -1,7 +1,7 @@
 // client/src/Publications.js
 
 import React from 'react';
-import './Publications.css';
+import '../css/Publications.css';
 
 function Publications() {
   return (

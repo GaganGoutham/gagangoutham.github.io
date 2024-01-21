@@ -1,6 +1,6 @@
 // client/src/Updates.js
 import React from 'react';
-import './Blog.css';
+import '../css/Blog.css';
 
 function Updates() {
   return (

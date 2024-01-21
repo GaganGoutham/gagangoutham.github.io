@@ -1,18 +1,18 @@
 // client/src/Updates.js
 import React from 'react';
-import './Updates.css';
-import bts1 from './bts1.jpg';
-import bts2 from './bts2.jpg';
-import bts3 from './bts3.jpg';
-import talk1 from './talk1.jpg';
-import talk2 from './talk2.jpg';
-import talk3 from './talk3.jpg';
-import r1 from './r1.jpg';
-import r2 from './r2.jpg';
-import r3 from './r3.jpg';
-import d1 from './d1.jpg';
-import d2 from './d2.jpg';
-import d3 from './d3.jpg';
+import '../css/Updates.css';
+import bts1 from '../images/bts1.jpg';
+import bts2 from '../images/bts2.jpg';
+import bts3 from '../images/bts3.jpg';
+import talk1 from '../images/talk1.jpg';
+import talk2 from '../images/talk2.jpg';
+import talk3 from '../images/talk3.jpg';
+import r1 from '../images/r1.jpg';
+import r2 from '../images/r2.jpg';
+import r3 from '../images/r3.jpg';
+import d1 from '../images/d1.jpg';
+import d2 from '../images/d2.jpg';
+import d3 from '../images/d3.jpg';
 
 const updatesData = [
   {

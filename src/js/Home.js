@@ -2,8 +2,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faGoogleScholar, faInstagram, faLinkedin, faMedium, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import './Home.css';
-import profile from './photo.jpg';
+import '../css/Home.css';
+import profile from '../images/photo.jpg';
 
 function Home() {
   return (

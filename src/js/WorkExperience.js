@@ -1,7 +1,7 @@
 // client/src/WorkExperience.js
 
 import React from 'react';
-import './WorkExperience.css';
+import '../css/WorkExperience.css';
 
 function WorkExperience() {
   return (
