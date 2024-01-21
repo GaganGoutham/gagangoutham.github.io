@@ -1,0 +1,18 @@
+/* client/src/Updates.css */
+
+.blog-container {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 375px 0;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+  .blog-image-container {
+    width: 50%; /* Set width to 100% for a single column on smaller screens */    
+    margin: 30px;
+  }
+}

@@ -1,0 +1,65 @@
+/* client/src/Updates.css */
+
+.updates-container {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0; /* Adjust padding for better spacing */
+}
+
+.updates-heading-container {
+  margin-bottom: 30px;
+  width: 80%;    
+  height: auto;
+  border-radius: 15px; /* Match the border-radius of the container */
+  box-shadow: 0 0px 15px rgb(255, 255, 255); /* Adjust box-shadow for better visibility */          
+  transition: transform 0.3s ease-in-out;
+  margin: 50px auto;
+  display: flex; /* Add display flex for column layout */
+  flex-direction: column; /* Adjust flex direction to column */
+  align-items: center; /* Center align items */
+}
+
+h3 {
+  margin-top: 15px; /* Add margin-top for space at the top of the h3 element */
+  margin-bottom: 0; /* Adjust margin-bottom to reduce space between heading and date */
+}
+
+.updates-images-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly; /* Adjust to distribute space evenly */  
+  align-items: center; /* Align items at the center */  
+}
+
+.updates-description {
+  margin-top: 20px;
+  margin: 25px 25px;
+}
+
+.updates-image-container {
+  position: relative;
+  width: 30%; /* Adjust the width of each image container */
+  overflow: hidden;
+  border-radius: 15px; /* Add border-radius for a smoother look */
+}
+
+.updates-image {
+  width: 100%;
+  height: auto;
+  border-radius: 35px; /* Match the border-radius of the container */
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3); /* Adjust box-shadow for better visibility */
+  transition: transform 0.3s ease-in-out;
+}
+
+.updates-heading-container:hover {
+  transform: scale(0.8);
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.9);
+}
+
+.updates-image-container:hover .updates-image {
+  transform: scale(1.3);
+}
+

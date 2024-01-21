@@ -1,0 +1,66 @@
+/* client/src/WorkExperience.css */
+
+.workexperience-container {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 150px 30px 280px; /* Adjusted padding for smaller screens */
+  scroll-snap-align: start;
+}
+
+.experience-item {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;  
+  border-radius: 10px; 
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 30px;
+  margin: 10px auto;;
+  max-width: 700px; 
+}
+
+.experience-item:hover {
+  transform: scale(0.8);
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.9);
+}
+
+h2 {
+  font-size: 3em; 
+  margin-bottom: 30px; 
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px; 
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+.date {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 2.5em; 
+    margin-bottom: 15px; 
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px; 
+  }
+
+  .date {
+    font-size: 1em;
+  }
+}

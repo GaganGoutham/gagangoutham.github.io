@@ -1,25 +1,120 @@
-import logo from './logo.svg';
+// client/src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import Home from './Home';
+import WorkExperience from './WorkExperience';
+import Blog from './Blog';
+import Publications from './Publications';
+import Updates from './Updates';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+      <NavBar />
+        <Routes>
+          <Route path="/" element={<HomeSection />} />
+          <Route path="/workexperience" element={<WorkExperienceSection />} />          
+          <Route path="/publications" element={<PublicationsSection />} />
+          <Route path="/updates" element={<UpdatesSection />} />
+          <Route path="/blog" element={<BlogSection />} />
+          <Route path="/https://drive.google.com/file/d/1AZdKX30RiKvmqK3YswZatjTHM3nIfy8Z/view?usp=sharing" />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+function NavBar() {
+  const [isHomePage, setIsHomePage] = React.useState(true);
+
+  const toggleMenu = () => {
+    const menuLinks = document.querySelector('.menu-links');
+    menuLinks.classList.toggle('show');
+  };
+
+  const closeMenu = () => {
+    const menuLinks = document.querySelector('.menu-links');
+    menuLinks.classList.remove('show');
+  };
+
+  React.useEffect(() => {
+    const homeSection = document.querySelector('.home-section');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        setIsHomePage(entry.isIntersecting);
+      });
+    });
+
+    if (homeSection) {
+      observer.observe(homeSection);
+    }
+
+    return () => {
+      if (homeSection) {
+        observer.unobserve(homeSection);
+      }
+    };
+  }, []);
+
+  return (
+    <nav className={`section-navigation ${isHomePage ? 'home-page' : ''}`}>
+      <div className="container">
+        <Link to="/" className="logo" onClick={closeMenu}>Gagan Goutham</Link>        
+        <div className="menu-icon" onClick={toggleMenu}>&#9776;</div>
+        <div className="menu-links">
+          <Link to="/" onClick={closeMenu}>Home</Link>
+          <Link to="/workexperience" onClick={closeMenu}>Work Experience</Link>
+          <Link to="/publications" onClick={closeMenu}>Publications</Link>
+          <Link to="/updates" onClick={closeMenu}>Updates</Link>
+          <Link to="/blog" onClick={closeMenu}>Blog</Link>
+          <a href="https://drive.google.com/file/d/1AZdKX30RiKvmqK3YswZatjTHM3nIfy8Z/view?usp=sharing" onClick={closeMenu}>CV</a>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function HomeSection() {
+  return (
+    <section className="home-section">
+      <Home />
+    </section>
+  );
+}
+
+function WorkExperienceSection() {
+  return (
+    <section className="workexperience-section">
+      <WorkExperience />
+    </section>
+  );
+}
+
+function PublicationsSection() {
+  return (
+    <section className="publications-section">
+      <Publications />
+    </section>
+  );
+}
+
+function UpdatesSection() {
+  return (
+    <section className="updates-section">
+      <Updates />
+    </section>
+  );
+}
+
+function BlogSection() {
+  return (
+    <section className="blog-section">
+      <Blog />
+    </section>
+  );
+}
