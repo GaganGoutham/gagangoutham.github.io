@@ -45,7 +45,7 @@ function Home() {
           &emsp; &emsp; I'm a final-year Computer Science and Engineering undergrad student at PES University.
           I have a specialization in Machine Learning-Data Science and my interests inlcude in the application of AI in the field of Computer Vision.                
           I am curious in exploring human emotions, climate patterns, geospatial intricacies, and the wonders of space science. 
-          My projects and workexperience reflects my commitment to utilizing technology for meaningful impact, spanning areas such as disease modeling, image segmentation, video analytics, and exploratory topics like AI4Mars, Dengue Prediction, Bengaluru Traffic, Autism Spectrum Disorder, and Mental Health.        
+          My projects and workexperience reflects my commitment to utilizing technology for meaningful impact, spanning areas such as image segmentation, video analytics, data science and exploratory topics like AI4Mars, Dengue Prediction, Bengaluru Traffic, Autism Spectrum Disorder, and Mental Health.        
         </p>
         <p>
         <br />  
