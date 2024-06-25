@@ -22,21 +22,9 @@ function Home() {
           <a href="https://github.com/GaganGoutham" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="1x" />
           </a>
-          <a href="https://twitter.com/gagan_goutham" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
-          </a>
           <a href="https://www.linkedin.com/in/gagan-goutham-242a641b1/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="1x" />
-          </a>
-          <a href="https://www.youtube.com/channel/UCB3YqevpI14qzZLCGPYZIHw" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faYoutube} size="1x" />
-          </a>
-          <a href="https://www.instagram.com/gagan_goutham/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} size="1x" />
-          </a>
-          <a href="https://medium.com/@gagangoutham.n03" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faMedium} size="1x" />
-          </a>
+          </a>          
         </div>              
       </div>
       <div className="aboutme-container">
